@@ -20,7 +20,9 @@
 * Только после всего перечисленного выше запустить `java -jar ./target/*jar` в папке с проектом
 * Результат работы вывожу в консоль `docker logs -f docker logs -f <Name contener>`
 * `sh stop`, чтобы остановить
-###ps
+* 
+### ps
+
 Скрипты шеловские `start, stop` используют docker-compose если не установлен то вот 
 * `docker run -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase`
 * `docker run -d --hostname my-rabbit --name some-rabbit -p 8082:15672 rabbitmq:3-management`
