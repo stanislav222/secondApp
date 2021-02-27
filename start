@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mvn -U clean package
+
+docker-compose up -d
+
