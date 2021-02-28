@@ -28,11 +28,9 @@ public class XMLParserUtil {
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder()
                 .parse(new InputSource(new StringReader(getXmlOfUrl())));
         NodeList errNodes = doc.getElementsByTagName("item");
-        for (int temp = 0; temp < errNodes.getLength(); temp++)
-        {
+        for (int temp = 0; temp < errNodes.getLength(); temp++){
             Node node = errNodes.item(temp);
-            if (node.getNodeType() == Node.ELEMENT_NODE)
-            {
+            if (node.getNodeType() == Node.ELEMENT_NODE){
                 Element eElement = (Element) node;
                 Client client = new Client();
                 client.setClientId(Long.valueOf(eElement.getElementsByTagName("clientId").item(0).getTextContent()));
