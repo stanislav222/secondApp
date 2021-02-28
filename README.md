@@ -25,4 +25,4 @@
 
 Скрипты шеловские `start, stop` используют docker-compose если не установлен то вот 
 * `docker run -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase`
-* `docker run -d --hostname my-rabbit --name some-rabbit -p 8082:15672 rabbitmq:3-management`
+* `docker run -d --hostname my-rabbit --name some-rabbit -p 8082:5672 -p 8083:15672 rabbitmq:3-management`
