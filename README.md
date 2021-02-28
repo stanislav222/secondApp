@@ -18,7 +18,7 @@
 * зайти в query выполнить запрос ``"CREATE PRIMARY INDEX `#primary` on `client`"``
 * Админка RabbitMq http://localhost:8083/ логин\пароль guest
 * Только после всего перечисленного выше запустить `java -jar ./target/*jar` в папке с проектом
-* Результат работы вывожу в консоль `docker logs -f <Name contener>`
+* Результат работы вывожу в консоль
 * `sh stop`, чтобы остановить
 
 ### ps
