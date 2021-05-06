@@ -26,7 +26,7 @@ public class ClientService {
     final RabbitTemplate rabbitTemplate;
     static final Integer BALANCE = 200;
 
-    private volatile List<Client> clientList;
+    private List<Client> clientList;
 
     @Scheduled(initialDelay = 6000, fixedDelay = 5000)
     public void updateRecordInCouchbaseWithScheduled(){
